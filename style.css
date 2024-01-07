@@ -1,0 +1,350 @@
+@font-face {
+    font-family: 'Kenia';
+    src: url(/fonts/Kenia-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Karla';
+    src: url(/fonts/Karla.ttf);
+}
+
+@font-face {
+    font-family: 'Istok Web';
+    src: url(/fonts/IstokWeb-Regular.ttf);
+}
+
+ *,
+ *::before,
+ *::after {
+   box-sizing: border-box;
+ }
+
+ :where(ul, ol):where([class]) {
+   padding-left: 0;
+ }
+
+ body,
+ :where(blockquote, figure):where([class]) {
+   margin: 0;
+
+ }
+ :where(
+   h1,
+   h2,
+   h3,
+   h4,
+   h5,
+   h6,
+   p,
+   ul,
+   ol,
+   dl
+ ):where([class]) {
+   margin-block: 0;
+ }
+ :where(dd[class]) {
+   margin-left: 0;
+ }
+ :where(ul[class]) {
+   list-style: none;
+ }
+ img {
+   display: block;
+   max-width: 100%;
+ }
+ input,
+ textarea,
+ select,
+ button {
+   font: inherit;
+ }
+ html {
+
+   height: 100%;
+ 
+   scroll-behavior: smooth;
+ }
+ body {
+
+   min-height: 100%;
+
+   line-height: 1.5;
+ }
+ @media (prefers-reduced-motion: reduce) {
+   * {
+     animation-duration: 0.01ms !important;
+     animation-iteration-count: 1 !important;
+     transition-duration: 0.01ms !important;
+     scroll-behavior: auto !important;
+   }
+ }
+
+ :root {
+    --color-red: #D53005;
+    --color-dark-gradient: linear-gradient(180deg, #D53005 0%, #000 6.04%);
+    --color-dark-gradient2: linear-gradient(180deg, #D53005 0%, #000 4.01%);
+    --color-text: #FFFFFF;
+
+    --font-family-base: 'Montserrat', sans-serif;
+
+    --transition-duration: 0.2s;
+ }
+
+body {
+    font-weight: 400;
+    font-size: 20px;
+    font-family: var(--color-red);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-transform: uppercase;
+}
+
+a:hover {
+  color: var(--color-red);
+}
+
+.header {
+  width: 1440px;
+  height: 1024px;
+  background-image: url(images/nebo.jpg);
+  background-size: cover;
+}
+
+.navigation {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.header-logo-image {
+  display: flex;
+  padding-left: 122px;
+  padding-top: 47px;
+}
+
+.navigation-list {
+  display: inline-flex;
+  flex-direction: row;
+  padding-top: 74px;
+  padding-left: 190px;
+  gap: 100px;
+}
+
+.navigation-item {
+  color: var(--color-text);
+  text-transform: uppercase;
+  text-decoration: none; 
+  text-align: center;
+  font-family: 'Istok Web', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.header-container {
+  display: flex;
+}
+
+.text-and-banner {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 250px;
+  margin: 0;
+  padding: 0;
+}
+
+.header-text {
+  margin: 0;
+  padding: 0;
+  width: 412px;
+  height: 264px;
+  margin-top: 164px;
+  margin-left: 115px;
+  flex-shrink: 0;
+  color: var(--color-text);
+  font-family: 'Kenia', sans-serif;
+  font-size: 150px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.header-text-min {
+  margin-left: 122px;
+  width: 290px;
+  height: 63px;
+  flex-shrink: 0;
+  color: var(--color-text);
+  font-family: 'Istok Web', sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: justify;
+}
+
+.iphone {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  gap: 10px;
+}
+
+.iphone-image {
+  width: 500px;
+  height: 888.006px;
+  flex-shrink: 0;
+  z-index: 9;
+}
+
+.kabel-image {
+  position: absolute;
+  top: 83.0%;
+  left: 9.5%;
+  width: 350px;
+  height: 350px;
+  flex-shrink: 0;
+}
+
+.headphones-image {
+  position: absolute;
+  top: 28%;
+  left: -110%;
+  width: 760px;
+  height: 570px;
+  flex-shrink: 0;
+}
+
+@media (max-width: 1440px) {
+  .header {
+    width: 1440px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .header {
+    width: 1000px;
+    height: 1024px;
+  }
+
+  .header-logo-image {
+    padding-left: 98px;
+  }
+
+  .navigation-list {
+    padding-left: 150px;
+    gap: 80px;
+  }
+
+  .headphones-image {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .header {
+    width: 768px;
+  }
+
+  .header-logo-image {
+    padding-left: 40px;
+  }
+
+  .navigation-list {
+    padding-left: 60px;
+    gap: 50px;
+  }
+
+  .header-text {
+    margin-left: 50px;
+    font-size: 80px;
+    width: 110px;
+    height: 30px;
+  }
+
+  .header-text-min {
+    margin-left: 50px;
+    width: 50px;
+    height: 30px;
+    font-size: 16px;
+  }
+
+  .text-and-banner {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 150px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .iphone-image {
+    top: 100%;
+    left: -50%;
+    width: 400px;
+    height: 650px;
+    flex-shrink: 0;
+    z-index: 9;
+  }
+  
+  .kabel-image {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .header {
+    width: 480px;
+  }
+
+  .header-logo-image {
+    padding-left: 5px;
+  }
+
+  .navigation-list {
+    padding-left: 8px;
+    gap: 5px;
+    font-size: 12px;
+  }
+
+  .header-text {
+    margin-left: 20px;
+    font-size: 50px;
+    width: 110px;
+    height: 30px;
+  }
+
+  .header-text-min {
+    margin-left: 20px;
+    width: 50px;
+    height: 30px;
+    font-size: 12px;
+  }
+
+  .text-and-banner {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 120px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .iphone-image {
+    top: 100%;
+    left: -70%;
+    width: 300px;
+    height: 450px;
+    flex-shrink: 0;
+    z-index: 9;
+  }
+  
+  .kabel-image {
+    display: none;
+  }
+}
