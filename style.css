@@ -1,16 +1,16 @@
 @font-face {
     font-family: 'Kenia';
-    src: url(/fonts/Kenia-Regular.ttf);
+    src: url(fonts/Kenia-Regular.ttf);
 }
 
 @font-face {
     font-family: 'Karla';
-    src: url(/fonts/Karla.ttf);
+    src: url(fonts/Karla.ttf);
 }
 
 @font-face {
     font-family: 'Istok Web';
-    src: url(/fonts/IstokWeb-Regular.ttf);
+    src: url(fonts/IstokWeb-Regular.ttf);
 }
 
  *,
